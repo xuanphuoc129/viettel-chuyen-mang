@@ -1,0 +1,173 @@
+<ion-header class="xs-hidden">
+  <ion-row class="p-row-header" align-items-center>
+    <ion-col col-3>
+      <a href="{{url_home}}">
+        <div class="a3-container-center">
+          <img src="{{logo_vt}}" alt="Chuyenmanggiuso-viettel">
+          <div class="name-web" text-uppercase>{{name}}</div>
+        </div>
+      </a>
+    </ion-col>
+    <ion-col col-9 class="padding-right">
+      <div class="a3-container a3-items-center a3-justify-end" text-right>
+        <div class="btn-header blue" (click)="doScrollSign()">
+          {{btn_blue}}
+        </div>
+        <div class="btn-header" (click)="scrollToBottom()">
+          {{btn_gray}}
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <div class="p-reason-container background-image" [ngStyle]="{'background-image': 'url('+reason_bg+')'}">
+    <div text-center>
+      <div class="p-title" text-uppercase>{{r_title}}</div>
+      <div class="p-sub-title">{{r_sub_title}}</div>
+    </div>
+
+
+    <ion-row nowrap align-items-start class="p-container" id="rowID" (swipe)="onSwipe($event)">
+      <ion-col col-6 col-sm-4 col-lg-2 *ngFor="let item of reasons; let i = index" text-center>
+        <div class="p-icon">
+          <img src="{{item.icon}}" alt="">
+        </div>
+        <div class="r-name" [innerHtml]="item.name"></div>
+
+      </ion-col>
+    </ion-row>
+
+    <div class="dot-container a3-container-center sm-hidden">
+      <div class="dot" *ngFor="let item of dots" [class.selected]="item == currentIndex + 1"></div>
+    </div>
+
+    <button ion-button class="btn-signup" (click)="doScrollSign()" text-uppercase>{{btn_sign}}</button>
+  </div>
+
+  <div class="block-3 background-image" id="signupId" [ngStyle]="{'background-image': 'url('+sign_bg+')'}">
+    <div text-center class="sign-title">
+      <img src="{{mouse}}" class="xs-hidden" alt="">
+
+      <div class="a3-container-center sign-up">
+        <img src="{{left}}" alt="">
+        <div class="primary-color big-font" text-uppercase>
+          {{dkchuyenmang}}
+        </div>
+        <img src="{{right}}" alt="">
+      </div>
+
+      <div class="gray-color medium-font">
+        {{sub_title}}
+      </div>
+
+      <div class="red-color light-font">
+        {{note}}
+      </div>
+    </div>
+
+    <ion-row class="regis-padding" id="regisID">
+      <ion-col col-sm-9 col-12>
+
+        <ion-row class="flow-container">
+          <ion-col col-3 *ngFor="let item of steps ;let i = index" (click)="onClickStep(item)" tappable>
+            <div class="circle-step a3-container-center a1-relative" [class.selected]="item.id <= stepID || mStepDones[i]"
+              [class.scale]="item.id == stepID">
+              {{item.id}}
+            </div>
+          </ion-col>
+
+          <div class="line background"></div>
+          <div class="line color" id="lineColorID"></div>
+        </ion-row>
+
+        <ion-row class="flow-container">
+
+          <ion-col col-3 *ngFor="let item of steps; let i = index">
+            <div text-center class="step-name medium-font" [class.selected]="item.id <= stepID || mStepDones[i]">
+              {{item.name}}
+            </div>
+          </ion-col>
+
+        </ion-row>
+
+
+        <div class="flow-content">
+          <hinh-thuc-dau-noi [hidden]="stepID != 1" (onSelect)="onChangeTypeConnect($event)"></hinh-thuc-dau-noi>
+          <div class="animated fadeIn" [hidden]="stepID != 2">
+            <chon-goi-cuoc (onChange)="onChangePackage($event)" [type]="typeID"></chon-goi-cuoc>
+          </div>
+          <infomation [hidden]="stepID != 3"></infomation>
+        </div>
+
+        <div class="flow-direction">
+          <ion-row>
+            <ion-col col-6>
+              <button [hidden]="stepID == 1" ion-button icon-left class="btn-flow" (click)="onClickBack()">
+                <ion-icon name="md-arrow-round-back"></ion-icon>
+                Quay lại
+              </button>
+            </ion-col>
+            <ion-col col-6 text-right>
+              <button [hidden]="stepID == 4" ion-button icon-right class="btn-flow" (click)="onClickNext()">
+                Tiếp theo
+                <ion-icon name="md-arrow-round-forward"></ion-icon>
+              </button>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </ion-col>
+
+      <ion-col col-sm-3 col-12>
+
+        <div class="box-shadow white-container">
+          <div class="regular-font type-connect">
+            <strong>Phí chuyển mạng</strong>
+            <span>{{phi_chuyen_mang}}</span>
+          </div>
+        </div>
+
+        <div class="box-shadow white-container" margin-top id="typeConnectID">
+          <div class="regular-font type-connect">
+            <strong>Hình thức đấu nối</strong>
+            <span *ngIf="typeConnect">{{typeConnect.name}}</span>
+          </div>
+        </div>
+
+        <div class="box-shadow white-container" margin-top id="packageID">
+          <div class="regular-font type-connect">
+            <strong>Gói cước</strong>
+          </div>
+
+          <div *ngIf="mPackagePayAfter.id != ''" class="m-p-container">
+            <package [package]="mPackagePayAfter" [isHiddenButton]="true"></package>
+          </div>
+
+          <div *ngIf="mPackagesPayForward.id != ''" class="m-p-container">
+            <div class="box-container">
+              <div class="box-title big-font">{{mPackagesPayForward.name}}</div>
+              <div class="box-des medium-font">
+                {{mPackagesPayForward.description}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-shadow white-container notes" margin-top>
+          <div class="note-line" [class.red]="i == 0" *ngFor="let note of notes; let i = index">
+            <ion-icon name="ios-arrow-round-forward-outline" *ngIf="i > 0"></ion-icon>
+            <span style="margin-left: 6px">{{note}}</span>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </div>
+
+
+  <img class="xs-hidden" src="./assets/imgs/w-footer.png" alt="">
+  <img class="sm-hidden" src="./assets/imgs/m-footer.png" alt="">
+
+</ion-content>

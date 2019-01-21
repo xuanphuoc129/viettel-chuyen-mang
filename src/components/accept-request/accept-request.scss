@@ -1,0 +1,73 @@
+accept-request {
+
+
+  .a-block-container {
+    padding: 10px 10px 10px 16px;
+
+    .a3-container {
+      align-items: center;
+      margin-bottom: 10px;
+
+      .a-name {
+        color: #FF7000;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.6rem;
+        // margin: 0 10px;
+      }
+
+      .icon {
+        margin-left: 10px;
+
+        img {
+          max-width: 32px;
+        }
+      }
+    }
+
+    .a-description {
+      color: black;
+      line-height: 1.6em;
+      font-size: 1.6rem;
+      white-space: pre-wrap;
+     
+    }
+    .new-des{
+      white-space: unset;
+      color: black;
+      line-height: 1.4em;
+      font-size: 1.6rem;
+     
+      ion-icon{
+        color: #32bfbd;
+        margin-right: 10px;
+        // font-size: 1.4em;
+      }
+    }
+    .new-des-1{
+      color: black;
+      line-height: 1.6em;
+      font-size: 1.6rem;
+    }
+  }
+
+  .notes {
+    padding: 16px;
+    line-height: 1.6em;
+
+    .note-line {
+      margin-top: 10px;
+
+      ion-icon {
+        color: red;
+        margin-right: 10px;
+      }
+
+      &.red {
+        color: red;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+hinh-thuc-dau-noi {
+  .item-type {
+    padding: 20px 0;
+    border: 1px solid lightgray;
+    color: gray;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition: 300ms;
+    // font-family: 'Nunito', sans-serif;
+
+    &.selected {
+      color: #00BEBA;
+      background: white;
+      border-color: #00BEBA;
+      box-shadow: 0 0px 8px rgba($color: #00BEBA, $alpha: .32);
+    }
+  }
+  .item-type:hover{
+      background: white;
+      border-color: #00BEBA;
+  }
+
+  .col {
+    padding: 10px !important;
+  }
+
+  .p-question {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    // color: #00BEBA;
+  }
+
+  .circle-28 {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+
+    &.selected {
+      color: #00BEBA;
+      border-color: #00BEBA;
+    }
+  }
+
+  .a1-absolute {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

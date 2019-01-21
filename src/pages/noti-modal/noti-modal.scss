@@ -1,0 +1,29 @@
+page-noti-modal {
+    .header:after{
+        height: 0 !important;
+    }
+    
+    .toolbar-background{
+        background: transparent !important;
+        border-bottom: none !important;
+
+    }
+    ion-content.content{
+        background: #f8f9f9;
+    }
+    img{
+        max-width: 60%;
+    }
+    .message{
+        font-size: 1.8rem;
+        font-family: 'Nunito', sans-serif;
+        padding: 0 16px;
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .bar-button{
+        color: black !important;
+    }
+}

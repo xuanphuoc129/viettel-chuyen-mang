@@ -1,0 +1,28 @@
+<!-- Generated template for the ChonGoiCuocComponent component -->
+<div>
+  <ion-row [hidden]="type == 1"> 
+    <ion-col col-sm-4 col-6 *ngFor="let item of mPackage">
+        <div class="package-container" >
+            <package [package]="item" [id]="mPackageIDSelected" (onSelect)="onChange($event)"></package>
+          </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row justify-content-center [hidden]="type == 2">
+    <ion-col col-sm-4 col-6 *ngFor="let item of mPackage2">
+      <div class="box-container" [class.selected]="item.id == mPackageID">
+        <div class="box-title big-font">{{item.name}}</div>
+        <div class="box-des medium-font">
+          {{item.description}}
+        </div>
+
+        <div text-center>
+          <button ion-button class="button-select" (click)="onClickPackage(item)">
+            <span [hidden]="item.id == mPackageID">Chọn</span>
+            <span [hidden]="item.id != mPackageID">Đã chọn</span>
+          </button>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</div>

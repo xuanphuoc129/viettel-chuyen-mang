@@ -1,0 +1,57 @@
+chon-goi-cuoc {
+  .box-container {
+    border: 1px solid rgba($color: #000000, $alpha: 0.05);
+    border-radius: 5px;
+    padding: 16px;
+    cursor: pointer;
+    transform: scale(.9);
+    transition: 200ms;
+    .box-title {
+      color: #32bfbd;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .box-des {
+      color: #676767;
+      min-height: 140px;
+      padding: 10px 0;
+    }
+
+    &.selected{
+      background: #32bfbd;
+      transform: scale(1);
+      box-shadow: 0 4px 4px rgba($color: #32bfbd, $alpha: .3);
+
+      .box-title{
+        color: white;
+      }
+      .box-des{
+        color: whitesmoke;
+      }
+      .button-select:hover{
+        background: white;
+        color: #32bfbd;
+      }
+    }
+
+
+    .button-select{
+      min-width: 120px;
+      background: white;
+      border: 1px solid #32bfbd;
+      transition: 200ms;
+      color: #32bfbd;
+      box-shadow: none;
+      border-radius: 5px;
+    }
+    .button-select:hover{
+      background: #32bfbd;
+      color: white;
+      box-shadow: 0 3px 6px rgba($color: #32bfbd, $alpha: .20);
+    }
+  }
+  .box-container:hover{
+    border-color: #32bfbd;
+  }
+}

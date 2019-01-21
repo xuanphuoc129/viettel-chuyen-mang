@@ -1,0 +1,22 @@
+page-accept-modal {
+  ion-content.content {
+    background: #FFFCF0;
+  }
+  .toolbar-ios ion-title{
+      padding: 0 !important;
+  }
+
+  .header:after {
+    height: 0 !important;
+  }
+
+  .toolbar-background {
+    background: transparent !important;
+    border-bottom: none !important;
+  }
+
+  .bar-button {
+    color: black !important;
+  }
+
+}

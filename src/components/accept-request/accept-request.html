@@ -1,0 +1,58 @@
+<!-- Generated template for the AcceptRequestComponent component -->
+<div>
+  <div class="a-block-container" *ngFor="let item of items">
+    <div class="a3-container a3-items-center">
+      <!-- <ion-icon name="md-arrow-round-forward"></ion-icon> -->
+      <div class="a-name">{{item.name}}</div>
+      <div class="icon">
+        <img src="{{item.icon}}" alt="">
+      </div>
+    </div>
+
+    <div class="a-description" [innerHtml]="item.description"></div>
+  </div>
+
+  <div class="a-block-container">
+    <div class="a3-container a3-items-center">
+      <!-- <ion-icon name="md-arrow-round-forward"></ion-icon> -->
+      <div class="a-name">NHẬN THÔNG BÁO CHUYỂN MẠNG GIỮ SỐ QUA TIN NHẮN</div>
+      <div class="icon">
+        <img src="./assets/imgs/stopwatch.svg" alt="">
+      </div>
+    </div>
+
+    <div class="new-des">
+      <ion-icon name="ios-arrow-round-forward-outline"></ion-icon>
+      <strong>Thành công:</strong> Khách hàng nhận lịch chuyển mạng của Trung tâm chuyển mạng Quốc gia.
+    </div>
+    <div class="new-des" style="margin-top: 8px">
+      <ion-icon name="ios-arrow-round-forward-outline"></ion-icon>
+      <strong>Không thành công :</strong> Khách hàng nhận thông báo lý do từ chối.Khách hàng ra cửa hàng Viettel làm thủ
+      tục hoàn cước(nếu có).
+    </div>
+  </div>
+  <div class="a-block-container">
+    <div class="a3-container a3-items-center">
+      <!-- <ion-icon name="md-arrow-round-forward"></ion-icon> -->
+      <div class="a-name">BẮT ĐẦU SỬ DỤNG MẠNG VIETTEL</div>
+      <div class="icon">
+        <img src="./assets/imgs/phone-with-hand.svg" alt="">
+      </div>
+    </div>
+
+    <div class="new-des-1">
+      Khách hàng lắp sim Viettel để sử dụng theo lịch thông báo của Trung tâm chuyển mạng Quốc gia.
+      <br>
+      Sim sẽ được nhận viên Viettel cung cấp khi khách hàng làm thủ tục chuyển mạng giữ số.
+    </div>
+  </div>
+
+
+
+  <!-- <div class="notes">
+      <div class="note-line" [class.red]="i == 0" *ngFor="let note of notes; let i = index">
+          <ion-icon name="ios-arrow-round-forward-outline" *ngIf="i > 0"></ion-icon>
+          <span>{{note}}</span>
+        </div>
+  </div> -->
+</div>

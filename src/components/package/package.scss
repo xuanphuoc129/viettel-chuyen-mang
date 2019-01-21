@@ -1,0 +1,106 @@
+package {
+  .white-bg {
+    border-radius: 10px;
+    position: relative;
+    border-radius: 10px;
+    // box-shadow: 0 1px 2px rgba($color: #000000, $alpha: .16);
+    border: 1px solid lightgray;
+    padding: 10px 1vw;
+    transition: 200ms;
+    transform: scale(.94);
+    opacity: .9;
+    .border-bottom {
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
+      padding-bottom: 16px;
+    }
+
+    &.selected{
+        border-color: #32bfbd;
+        background: #32bfbd;
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 4px 4px rgba($color: #32bfbd, $alpha: .3);
+        .btn-sl-vt{
+            background: white !important;
+        }
+        .btn-sl-vt:hover{
+            color: #32bfbd;
+        }
+
+        .block-tittle{
+            color: white;
+        }
+        .block-des{
+            color: rgba($color: white, $alpha: .8);
+        }
+        .block-subtitle{
+            color: rgba($color: white, $alpha: .8);
+        }
+        .border-bottom {
+            border-bottom: 1px solid rgba($color: white, $alpha: .6);
+        }
+    }
+  }
+  .white-bg:hover{
+    border-color: #32bfbd;
+  }
+
+  .line {
+    height: 1px;
+    width: 80px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
+
+  .block-tittle {
+    color: #32bfbd;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  .block-subtitle {
+    margin-top: 10px;
+    color: #676767;
+  }
+
+  .block-des {
+    color: #676767;
+    line-height: 1.6em;
+    min-height: 120px;
+  }
+  .btn-sl-vt{
+    color: #32bfbd;
+    border-color: #32bfbd;
+    min-width: 100px;
+    transition: 200ms;
+    border-radius: 5px;
+  }
+  .btn-sl-vt:hover{
+      background: #32bfbd !important;
+      color: white;
+  }
+
+ 
+  @media (min-width: 319px) and (max-width: 415px){
+    .block-tittle{
+        font-size: 1.8rem !important;
+    }
+    .block-subtitle{
+        font-size: 1.2rem !important;
+    }
+    .block-des{
+        font-size: 1.2rem !important;
+        min-height: 150px !important;
+    }
+    .white-bg{
+        padding-left: 10px;
+    }
+  }
+  
+}

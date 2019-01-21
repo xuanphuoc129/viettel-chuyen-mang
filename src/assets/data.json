@@ -1,0 +1,107 @@
+{
+  "phone_number": "098.776.2233",
+  "sitekey":"6Lf87HsUAAAAAKIeDHzY17bd66hDqDbgn6tmhWv3",
+  "phi_chuyen_mang": "60,000đ",
+  "note": "Lưu ý: Các trường hợp không được hoàn cước chuyển mạng.\nNhà mạng chuyển đi từ chối yêu cầu chuyển mạng do khách hàng không đáp ứng điều kiện chuyển mạng.\nKhách hàng hủy yêu cầu chuyển mạng.\nYêu cầu chuyển mạng bị từ chối do khách hàng không gửi tin nhắn xác nhận đăng ký chuyển mạng.",
+  "accept_request": [{
+      "icon": "./assets/imgs/support.svg",
+      "name": "NHÂN VIÊN VIETTEL SẼ LIÊN HỆ KHÁCH HÀNG",
+      "description": "Khách hàng chờ nhân viên Viettel liên hệ làm thủ tục chuyển mạng giữ số trên hệ thông Viettel.\nSau khi hoàn thành thủ tục đăng ký chuyển mạng tại Viettel, Khách hàng nộp cước phí <strong>60.000đ</strong> và làm tiếp các bước dưới đây."
+    },
+    {
+      "icon": "./assets/imgs/sms-message.svg",
+      "name": "NHẮN TIN ĐĂNG KÝ CHUYỂN MẠNG GIỮ SỐ",
+      "description": "Khách hàng gửi tin nhắn đến trung tâm chuyển mạng quốc gia.\nSoạn <strong>YCCM</strong> gửi <strong>1441</strong> (miễn phí)"
+    }
+  ],
+  "config_server_email": {
+    "email_receive": "kunlyblack@gmail.com",
+    "email_sender": "cuahangviettel.vn@gmail.com",
+    "smtp_server": "smtp.gmail.com",
+    "username": "cuahangviettel.vn@gmail.com",
+    "password": "eknpglqnwzyydbur"
+  },
+  "reason": [{
+      "name": "Phủ sóng rộng nhất",
+      "icon": "./assets/imgs/vt-tower.png"
+    },
+    {
+      "name": "Tốc độ mạng<br>3G/4G nhanh nhất",
+      "icon": "./assets/imgs/vt-wifi.png"
+    },
+    {
+      "name": "Ưu đãi hấp dẫn",
+      "icon": "./assets/imgs/vt-gift.png"
+    },
+    {
+      "name": "Cộng đồng lớn",
+      "icon": "./assets/imgs/vt-people.png"
+    },
+    {
+      "name": "Kênh hỗ trợ<br>Khách hàng rộng khắp",
+      "icon": "./assets/imgs/vt-headphones.png"
+    }
+  ],
+  "goicuoc": {
+    "ds_goicuoc_tratruoc": [{
+        "id": "economy",
+        "name": "Economy",
+        "description": "Economy là gói cước trả trước đơn giản, thuận tiện và dễ sử dụng nhất của Viettel Telecom."
+      },
+      {
+        "id": "tomato",
+        "name": "Tomato",
+        "description": "TOMATO là gói cước đại chúng nhất của Viettel, đặc biệt dành cho nhóm khách hàng mong muốn sử dụng điện thoại di "
+      }
+    ],
+    "ds_goicuoc_trasau": [{
+        "id": "T150",
+        "name": "T150",
+        "description": "call-1000 phút nội mạng\ncall-100 phút ngoại mạng + quốc tế",
+        "price": "150"
+      },
+      {
+        "id": "B150",
+        "name": "B150",
+        "description": "call-1000 phút nội mạng\nwifi-5GB data",
+        "price": "150"
+      },
+      {
+        "id": "B250",
+        "name": "B250",
+        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\nwifi-10GB data\nsms-50 sms nội mạng",
+        "price": "250"
+      },
+      {
+        "id": "B250X",
+        "name": "B250X",
+        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-5GB data\nsms-50 sms nội mạng",
+        "price": "250"
+      },
+      {
+        "id": "B400",
+        "name": "B400",
+        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-15GB data\nsms-100 sms nội mạng",
+        "price": "400"
+      },
+      {
+        "id": "B500",
+        "name": "B500",
+        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-200 phút ngoại mạng + quốc tế\nwifi-30GB data\nsms-200 sms nội mạng",
+        "price": "500"
+      },
+      {
+        "id": "B700",
+        "name": "B700",
+        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-300 phút ngoại mạng + quốc tế\nwifi-15GB data\nsms-300 sms nội mạng",
+        "price": "700"
+      },
+      {
+        "id": "B1000",
+        "name": "B1000",
+        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-500 phút ngoại mạng + quốc tế\nwifi-30GB data\nsms-500 sms trong nước",
+        "price": "1000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "viettel-chuyenmanggiuso",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

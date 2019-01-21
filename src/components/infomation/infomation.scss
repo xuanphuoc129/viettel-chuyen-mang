@@ -1,0 +1,53 @@
+infomation {
+  .max-width {
+    max-width: 800px;
+
+    ion-input {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+    ion-input:focus{
+      border-color: #32bfbd !important;
+    
+    }
+
+    .item{
+        padding-left: 0;
+    }
+
+    .item-inner {
+      border-bottom: none !important;
+    }
+
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner {
+      border-bottom-color: none !important;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+      box-shadow: none;
+    }
+  }
+
+  .red-color{
+      color: red;
+      font-style: italic;
+      margin-top: 0 !important;
+      margin-bottom: 20px;
+      padding-left: 10px;
+  }
+
+  .btn-send{
+      background: #FF7000;
+      border-radius: 5px;
+      min-height: 48px;
+  }
+
+  @media (max-width: 575px) {
+    .row{
+        margin-top: 16px;
+    }
+  }
+}

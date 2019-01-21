@@ -1,0 +1,29 @@
+<!-- Generated template for the PackageComponent component -->
+<div>
+  <div class="white-bg" [class.selected]="mGoiCuocSelected.id == mID">
+    <div class="border-bottom">
+      <div class="block-tittle" text-uppercase>
+        <span>{{mGoiCuocSelected.name}}</span>
+      </div>
+      <div class="block-subtitle">
+        <span>Cước duy trì: <strong>{{mGoiCuocSelected.fee | number}}</strong> đ/01 tháng</span>
+      </div>
+    </div>
+
+    <div class="block-des" padding-top>
+      <div *ngFor="let des of mGoiCuocSelected.description">
+        <ion-icon name="call" *ngIf="des.type == 'call'"></ion-icon>
+        <ion-icon name="ios-wifi" *ngIf="des.type == 'wifi'"></ion-icon>
+        <ion-icon name="chatboxes" *ngIf="des.type == 'sms'"></ion-icon>
+        <span style="margin-left: 10px">{{des.message}}</span>
+      </div>
+    </div>
+
+    <div text-center class="bg-btn" [hidden]="isHiddenButton">
+      <button ion-button outline class="btn-sl-vt" (click)="onClickSelect()" text-uppercase>
+        <span [hidden]="mGoiCuocSelected.id == mID">Chọn</span>
+        <span [hidden]="mGoiCuocSelected.id != mID">Đã Chọn</span>
+      </button>
+    </div>
+  </div>
+</div>
