@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 import { AppConfig } from '../app-config';
 import { ScrollOption, ScrollController } from './scroll-controller';
 import { EmailConfig } from '../class/email-config';
-import { ToastController } from 'ionic-angular';
+import { ToastController, ModalController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { StorageController } from './storage';
 
@@ -23,6 +23,7 @@ export class AppModuleProvider {
   private mStorageController: StorageController;
   phone_number: string = "";
   constructor(
+    public mModalController: ModalController,
     public mStorage: Storage,
     public mToastController: ToastController,
     public http: Http) {
@@ -31,6 +32,16 @@ export class AppModuleProvider {
     this.mStorageController = new StorageController();
     this.mStorageController.setStorage(this.mStorage);
   }
+  public showModal(page,params?:any,callback?:any){
+    let modal = this.mModalController.create(page,params ? params : null);
+    modal.present();
+    modal.onDidDismiss(data=>{
+      if(callback){
+        callback(data);
+      }
+    })
+  }
+
   public getStorageController() {
     return this.mStorageController;
   }

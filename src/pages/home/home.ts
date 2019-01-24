@@ -58,6 +58,8 @@ export class HomePage {
   phi_chuyen_mang: string = "";
   notes: Array<string> = [];
 
+
+  mId: number = 2;
   constructor(
     public mAlertController: AlertController,
     public mModalControl: ModalController,
@@ -143,6 +145,20 @@ export class HomePage {
     this.doScrollToRegis();
   }
 
+  onClickCondition() {
+    this.mId = 2;
+    setTimeout(() => {
+      this.myContent.scrollToTop(300);
+    }, 200);
+  }
+
+  onClickSign() {
+    this.mId = 1;
+    setTimeout(() => {
+      this.doScrollSign();
+    }, 200);
+  }
+
   doScrollSign() {
     let ele = document.getElementById("signupId");
     if (ele) {
@@ -203,7 +219,7 @@ export class HomePage {
     if (screen.width > 575) {
       let modal = this.mModalControl.create("NotiModalPage");
       modal.present();
-    }else{
+    } else {
       let alert = this.mAlertController.create({
         title: "Thông báo",
         message: "Hiện tại hình thức chuyển mạng sang gói trả trước chưa được áp dụng"

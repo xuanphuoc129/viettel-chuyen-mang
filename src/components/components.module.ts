@@ -7,13 +7,15 @@ import { IonicModule } from 'ionic-angular';
 import { CommonModule } from '@angular/common';
 import { PackageComponent } from './package/package';
 import { RecaptchaModule } from 'ng-recaptcha';
+import { CoditionComponent } from './codition/codition';
 
 @NgModule({
 	declarations: [HinhThucDauNoiComponent,
     ChonGoiCuocComponent,
     InfomationComponent,
     AcceptRequestComponent,
-    PackageComponent],
+    PackageComponent,
+    CoditionComponent],
 	imports: [
         IonicModule,
         CommonModule,
@@ -24,6 +26,7 @@ import { RecaptchaModule } from 'ng-recaptcha';
     ChonGoiCuocComponent,
     InfomationComponent,
     AcceptRequestComponent,
-    PackageComponent]
+    PackageComponent,
+    CoditionComponent]
 })
 export class ComponentsModule {}

@@ -1,0 +1,33 @@
+<!-- Generated template for the CoditionComponent component -->
+<div>
+  <div class="font-title">ĐIỀU KIỆN CHUYỂN MẠNG VIETTEL</div>
+  <div class="font-subtitle">
+    Tại thời điểm kiểm tra thông tin, thuê bao đăng ký chuyển mạng cần đáp ứng đồng thời các điều kiện sau:
+  </div>
+
+  <div class="a3-container a3-items-center" *ngFor="let item of items">
+    <div class="item-image">
+      <ion-icon name="{{item.icon}}"></ion-icon>
+    </div>
+
+    <div class="content-container">
+      <div class="item-name">
+        {{item.name}}
+      </div>
+
+      <div class="item-des">
+        {{item.description}}
+      </div>
+
+      <div class="btn-container">
+        <button ion-button (click)="onClickItem(item)">
+          Cách thức kiểm tra >>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+</div>
