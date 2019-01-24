@@ -1,5 +1,5 @@
-<ion-header class="xs-hidden">
-  <ion-row class="p-row-header" align-items-center>
+<ion-header>
+  <ion-row class="p-row-header xs-hidden" align-items-center>
     <ion-col col-3>
       <a href="{{url_home}}">
         <div class="a3-container-center">
@@ -10,16 +10,33 @@
     </ion-col>
     <ion-col col-9 class="padding-right">
       <div class="a3-container a3-items-center a3-justify-end" text-right>
-        <div class="btn-header " [class.blue]="mId == 1" (click)="onClickSign()">
+        <div class="btn-header" [class.blue]="mId == 1" (click)="onClickSign()">
           {{btn_blue}}
         </div>
         <div class="btn-header" [class.blue]="mId == 2" (click)="onClickCondition()">
           {{btn_gray}}
         </div>
+        <div class="btn-header" (click)="onClickQuestion()">
+          {{btn_gray_2}}
+        </div>
       </div>
     </ion-col>
   </ion-row>
+
+  <ion-toolbar mode="md" class="sm-hidden">
+    <ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title text-left>
+        <img src="{{logo_vt_m}}" alt="Chuyenmanggiuso-viettel">
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
+
+
 
 <ion-content>
   <div [hidden]="mId==1">
@@ -27,19 +44,6 @@
     <div class="condition-container">
       <codition></codition>
     </div>
-
-    <div class="footer-container">
-      <div class="question-name">
-        Bạn đã đủ điều kiện? Đăng ký chuyển sang mạng Viettel ngay
-      </div>
-
-      <div class="btn-sign-container">
-        <button ion-button (click)="onClickSign()">
-          Đăng ký
-        </button>
-      </div>
-    </div>
-
 
   </div>
   <div [hidden]="mId==2">
@@ -186,10 +190,20 @@
         </ion-col>
       </ion-row>
     </div>
-
-
-    <img class="xs-hidden" src="./assets/imgs/w-footer.png" alt="">
-    <img class="sm-hidden" src="./assets/imgs/m-footer.png" alt="">
   </div>
+
+  <div id="questionanswer">
+    <question-and-answer></question-and-answer>
+  </div>
+
+  <ion-fab top left>
+    <fake-customer></fake-customer>
+  </ion-fab>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)="onClickAddFab()">
+      <ion-icon name="add" class="animated pulse"></ion-icon>
+    </button>
+  </ion-fab>
 
 </ion-content>

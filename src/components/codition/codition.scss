@@ -64,7 +64,7 @@ codition {
     }
 
   }
-
+  
 
 
   .a3-container {
@@ -73,5 +73,25 @@ codition {
     background: white;
     box-shadow: 0 3px 6px rgba($color: #8a8a8a, $alpha: .16);
     padding: 10px 16px 0 16px;
+  }
+
+  @media (max-width: 575px) {
+      .item-name{
+        font-size: 1.5rem !important;
+      }
+      .item-des{
+        font-size: 1.3rem !important;
+      }
+      .font-title{
+        font-size: 2rem !important;
+      }
+      .font-subtitle{
+        font-size: 1.3rem !important;
+        max-width: 300px;
+        margin: auto;
+      }
+      .btn-container{
+        text-align: center !important;
+      }
   }
 }

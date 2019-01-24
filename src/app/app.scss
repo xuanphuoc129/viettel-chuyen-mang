@@ -14,6 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.popup-container {
+  width: 100%;
+  max-width: 600px;
+  overflow: scroll;
+  margin: auto;
+
+}
+
+.modal-wrapper {
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
 .normal-font {
   font-size: map-get($map: $sizes, $key: regular);
 }
@@ -32,6 +57,42 @@
 
 .big-font {
   font-size: map-get($map: $sizes, $key: big);
+}
+
+.fake-customer{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  margin-left: 10px;
+  z-index: 99;
+  // background: white;
+  border-radius: 40px;
+}
+
+.fab ion-icon{
+  font-size: 3.4rem;
+}
+.fab{
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  background: #f57727;
+}
+
+.menu-btn-container{
+  .item{
+    color: map-get($map: $colors, $key: blue);
+  }
+ 
+}
+.list-ios .item-block .item-inner{
+  border-bottom: 0.55px solid #eaeaea !important;
+}
+.list-ios > .item-block:first-child{
+  border-top: none !important;
+}
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+  border-bottom: none !important;
 }
 
 @media (max-width: 575px) {

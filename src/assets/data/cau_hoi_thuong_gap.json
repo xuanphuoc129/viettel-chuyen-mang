@@ -1,0 +1,119 @@
+{
+    "Sheet1": [
+        {
+            "id": "1",
+            "question": "Dịch vụ Chuyển mạng giữ số (MNP) là gì?",
+            "answer": "Chuyển mạng viễn thông di động giữ nguyên số (MNP) là thủ tục cho phép các thuê bao di động có thể chuyển từ một doanh nghiệp cung cấp dịch vụ di động này đến một doanh nghiệp cung cấp dịch vụ di động khác nhưng vẫn được giữ nguyên số điện thoại. "
+        },
+        {
+            "id": "2",
+            "question": "Các bước tiến hành chuyển mạng giữ số sẽ được thực hiện như thế nào?",
+            "answer": "Việc chuyển đổi được thực hiện trên hệ thống. \n1. Nhà mạng tiếp nhận yêu cầu chuyển mạng từ người dùng. \n2. Kiểm tra điều kiện chuyển mạng của thuê bao. \n3. Lập lịch chuyển mạng. \n4. Thực hiện chuyển mạng. \n5. Cập nhật thông tin sau khi chuyển mạng. \n6. Đồng bộ cơ sở dữ liệu và thông tin thuê bao chuyển mạng. \n7. Thông báo cho khách hàng thông tin về chuyển mạng."
+        },
+        {
+            "id": "3",
+            "question": "Khi đổi mạng giữ số có phải thay đổi đầu số không?",
+            "answer": "Không, Khách hàng vẫn được giữ nguyên số thuê bao đang sử dụng khi thực hiện chuyển mạng sang nhà mạng khác."
+        },
+        {
+            "id": "4",
+            "question": "Những đối tượng nào sẽ tham gia vào quá trình chuyển mạng?",
+            "answer": "Có 4 đối tượng tham gia vào quá trình chuyển mạng:\n- Khách hàng: Là người yêu cầu thực hiện dịch vụ chuyển mạng giữ số.\n- Nhà mạng chuyển đi (DNO): Nhà mạng hiện tại khách hàng đang sử dụng dịch vụ.\n- Nhà mạng chuyển đến (RNO): Nhà mạng mà khách hàng muốn chuyển sang.\n- Trung tâm chuyển mạng quốc gia (CCH): Là đơn vị quản lý và điều phối chung về dịch vụ chuyển mạng cho tất cả các nhà mạng."
+        },
+        {
+            "id": "5",
+            "question": "Thủ tục và thời gian hoàn thành việc chuyển mạng giữ số?",
+            "answer": "Thủ tục cơ bản: \na. Cá nhân: \n- TBTT: CMT/ Hộ chiếu/ Thẻ căn cước/ Visa đang còn thời hạn sử dụng. \n- TBTS: CMT/ Hộ chiếu/ Thẻ căn cước/ Visa còn hạn. \nb. Doanh Nghiệp: \n- TBTT: \n+ Giấy giới thiệu/ ủy quyền \n+ Bản sao giấy chứng nhận ĐKDN/ ĐKKD/ ĐKĐT/ Quyết định thành lập \n+ CMT/ Hộ chiếu/ Thẻ căn cước/ Visa đang còn thời hạn sử dụng. \n- TBTS: \n+ Giấy giới thiệu/ ủy quyền \n+ Bản sao giấy chứng nhận ĐKDN/ ĐKKD/ ĐKĐT/ Quyết định thành lập \n+ CMT/ Hộ chiếu/ Thẻ căn cước/ Visa đang còn thời hạn sử dụng. \nThời gian: tối đa thực hiện một giao dịch chuyển mạng là 2 ngày làm việc với thuê bao cá nhân, 3 ngày làm việc với thuê bao doanh nghiệp, thời gian gián đoạn dịch vụ chuyển mạng tối đa là 1 giờ.\""
+        },
+        {
+            "id": "6",
+            "question": "Mức phí cho quá trình chuyển mạng giữ số?",
+            "answer": "Mức phí cho một thuê bao chuyển mạng giữ số đã gồm phí SIM và phí hòa mạng mới.\n- Đối với thuê bao trả sau: Phí chuyển mạng (MNP) =  60.000đ\n- Đối với thuê bao trả trước: Phí chuyển mạng (MNP) = 50.000đ"
+        },
+        {
+            "id": "7",
+            "question": "Khi Chuyển mạng giữ số, tài khoản, hạn sử dụng và các dịch vụ đang dùng có được bảo lưu không?",
+            "answer": "Các tài khoản và dịch vụ Khách hàng đang dùng ở nhà mạng cũ sẽ bị hủy khi chuyển sang mạng khác. Trước khi chuyển đổi, KH nên sao lưu danh bạ từ sim sang thiết bị để tránh mất thông tin liên lạc."
+        },
+        {
+            "id": "8",
+            "question": "Trong trường hợp nào thì tôi sẽ được hoàn trả hoặc không hoàn trả phí dịch vụ chuyển mạng",
+            "answer": "Các trường hợp Thuê bao không được hoàn trả phí dịch vụ chuyển mạng:\n- Khách hàng chủ động Hủy yêu cầu chuyển mạng.\n- Yêu cầu chuyển mạng bị hủy khi khách hàng không gửi tin nhắn xác nhận chuyển mạng trong 24h kể từ khi làm thủ tục.\n- Thuê bao yêu cầu chuyển mạng vi phạm các điều kiện chuyển mạng.\nCác trường hợp Thuê bao được hoàn trả phí dịch vụ chuyển mạng:\n- Do các lỗi kỹ thuật của hệ thống chuyển mạng và khách hàng không còn nhu cầu chuyển mạng."
+        },
+        {
+            "id": "9",
+            "question": "Tôi có thể thực hiện yêu cầu chuyển mạng theo những hình thức nào?",
+            "answer": "Đến trực tiếp các Điểm giao dịch gần nhất của Viettel để làm thủ tục.\nTruy cập Web: https://cuahangviettel.vn/chuyenmanggiuso/ để đăng ký thủ tục chuyển mạng. Tư vấn viên Viettel sẽ liên hệ đến nhà để hoàn thiện thủ tục tại nhà.\nGọi điện đến tổng đài 180081098, điện thoại viên sẽ hướng dẫn và đăng ký thông tin yêu cầu chuyển mạng cho bạn."
+        },
+        {
+            "id": "10",
+            "question": "Làm sao để tôi biết có đủ điều kiện chuyển mạng hay không?",
+            "answer": "Bạn phải đảm bảo các điều kiện sau để được thực hiện chuyển mạng:\n- Số thuê bao phải trong trạng thái hoạt động 2 chiều ở nhà mạng hiện tại.\n- Thuê bao đã được sử dụng trong ít nhất 06 tháng kể từ ngày hòa mạng.\n- Không vi phạm hợp đồng cung cấp và sử dụng dịch vụ viễn thông hoặc điều kiện giao dịch / các cam kết đã ký với nhà mạng hiện tại.\n- Thuê bao không nằm trong các danh sách đặc biệt như: số thuê bao đang bị tranh chấp, bị truy tố, số thuê bao thực hiện rao vặt trái phép, SMS spam.\n- Nếu là thuê bao trả sau, cần thanh toán hết các hóa đơn cước và cước nóng của tháng hiện tại không quá 100,000đ.\nTrong 2 tháng từ tháng 11/2018 đến hết tháng 12/2018, chỉ có các thuê bao trả sau mới được tiếp nhận yêu cầu chuyển mạng. Các thuê bao trả trước sẽ được chuyển mạng giữ số từ ngày 01/01/2019."
+        },
+        {
+            "id": "11",
+            "question": "Tôi đang dùng trả trước và muốn chuyển sang trả sau ở nhà mạng mới có được không?",
+            "answer": "Bạn có thể chuyển từ trả trước ở nhà mạng này sang trả sau ở nhà mạng khác và ngược lại."
+        },
+        {
+            "id": "12",
+            "question": "Khi chuyển mạng tôi sẽ nhận 1 sim mới từ nhà mạng chuyển đến hay tôi vẫn có thể sử dụng sim cũ từ nhà mạng chuyển đi.",
+            "answer": "Bạn không thể sử dụng được SIM cũ. Bạn sẽ nhận được 1 sim mới từ Viettel khi thực hiện chuyển mạng."
+        },
+        {
+            "id": "13",
+            "question": "Có quy định thời gian gửi tin nhắn yêu cầu chuyển mạng đến 1441 không?",
+            "answer": "KH gửi tin nhắn xác nhận yêu cầu chuyển mạng với cú pháp YCCM tới 1441 (miễn phí) trong vòng 24h kể từ khi đăng ký chuyển mạng. Sau 24h, nếu KH không nhắn tin thì yêu cầu chuyển mạng của KH sẽ bị hủy."
+        },
+        {
+            "id": "14",
+            "question": "Kể từ khi hoàn thành thủ tục YYCM thì bao lâu sau tôi sẽ được chuyển mạng thành công.",
+            "answer": "Thủ tục chuyển mạng được chính thức bắt đầu khi có đủ hai nội dung dưới đây:\n- Yêu cầu chuyển mạng được gửi đến Trung tâm Chuyển mạng Quốc gia từ hệ thống của Viettel.\n- Khách hàng xác nhận bằng cách gửi tin nhắn: YCCM gửi đến 1441.\nNhà mạng chuyển đi sẽ có tối đa 8h làm việc để gửi lại kết quả kiểm tra điều kiện chuyển mạng của thuê bao.\nSau khi nhà mạng chuyển đi đồng ý, khách hàng sẽ được Trung tâm Chuyển mạng Quốc gia thông báo lịch chuyển mạng tối đa sau 03 ngày làm việc."
+        },
+        {
+            "id": "15",
+            "question": "Sau khi chuyển thành công, thuê bao của tôi có nhận được thông báo gì không?",
+            "answer": "Trước và sau khi chuyển mạng, Khách hàng đều nhận được tin nhắn thông báo."
+        },
+        {
+            "id": "16",
+            "question": "Số điện thoại của tôi hay có bất kỳ dich vụ nào tôi đang sử dụng tại nhà mạng hiện tại sẽ bị dừng trong quá trình xử lý yêu cầu chuyển mạng không?",
+            "answer": "Bạn hoàn toàn có thể sử dụng dịch vụ bình thường trong suốt quá trình thực hiện dịch vụ chuyển mạng.\nDịch vụ sẽ bị gián đoạn vào thời điểm chuyển mạng khi nhà mạng chuyển đi cắt sóng và chuyển sóng sang cho nhà mạng mới.\nThuê bao của bạn sẽ được hòa mạng Viettel ngay khi nhà mạng chuyển đi cắt sóng thuê bao của bạn.\n"
+        },
+        {
+            "id": "17",
+            "question": "Làm sao để yêu cầu chuyển mạng của tôi có được chấp nhận hay từ chối không?",
+            "answer": "Trung tâm chuyển mạng sẽ gửi tin nhắn tới số điện thoại của bạn với nội dung thông báo thuê bao của bạn được chấp nhận chuyển mạng hoặc từ chối chuyển mạng?"
+        },
+        {
+            "id": "18",
+            "question": "Làm sao tôi biết hiện trạng quá trình chuyển mạng của tôi?",
+            "answer": "Bạn có thể gọi điện tới Hotline của Viettel để được hỗ trợ tốt nhất: 18008098"
+        },
+        {
+            "id": "19",
+            "question": "Tôi là một thuê bao trả sau tôi có thể dùng gói cước ở nhà mạng chuyển đến tương tự như gói cước hiện tại tôi đang dùng hay không?",
+            "answer": "Không. Nhưng bạn sẽ được tham gia các gói cước ưu đãi riêng cho các thuê bao chuyển mạng tới mạng Viettel."
+        },
+        {
+            "id": "20",
+            "question": "Tôi có thể hủy yêu cầu chuyển mạng không?",
+            "answer": "Bạn có thể hủy yêu cầu chuyển mạng bằng 2 hình thức:\n- Đến điểm giao dịch đã tạo yêu cầu chuyển mạng để thông báo giao dịch viên hủy yêu cầu chuyển mạng.\n- Nhắn tin SMS cú pháp: HUYCM gửi đến 1441."
+        },
+        {
+            "id": "21",
+            "question": "Nếu sau khi chuyển mạng thành công, tôi muốn quay về nhà mạng chuyển đi của tôi có được không?",
+            "answer": "Bạn có thể yêu cầu chuyển mạng về nhà mạng chuyển đi sau khi thực hiện chuyển mạng ít nhất 90 ngày."
+        },
+        {
+            "id": "22",
+            "question": "Nhà mạng chuyển đi có thể từ chối yêu cầu chuyển mạng của tôi hay không?",
+            "answer": "Nhà mạng chuyển đi có quyền từ chối yêu cầu chuyển mạng của bạn nếu:\n- Bạn chưa thanh toán hết cước thuê bao.\n- Số thuê bao của bạn đang bị khóa tại thời điểm yêu cầu.\n- Số thuê bao chưa hòa mạng được đủ 06 tháng.\n- Số thuê bao của bạn nằm trong một hợp đồng cam kết hoặc còn thời hạn cam kết sử dụng dịch vụ với nhà mạng chuyển đi.\n- Bạn không phải là chủ nhân của số thuê bao (Số thuê bao được đứng tên bởi doanh nghiệp hoặc một tổ chức..).\n- Số thuê bao của bạn nằm trong danh sách bị từ chối: số thuê bao đang bị tranh chấp, bị truy tố, số thuê bao thực hiện rao vặt trái phép, SMS spam."
+        },
+        {
+            "id": "23",
+            "question": "Số điện thoại của tôi là số đẹp. Tôi có phải trả thêm phí gì khi thực hiện chuyển mạng tới Viettel không?",
+            "answer": "Không."
+        }
+    ]
+}

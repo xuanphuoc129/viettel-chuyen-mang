@@ -5,16 +5,29 @@ page-home {
     background: whitesmoke;
     padding: 16px 6vw;
   }
+  .toolbar-title-ios{
+    text-align: left;
+    padding-left: 10px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+  .bar-button{
+    color: #32bfbd;
+  }
 
   .footer-container {
     text-align: center;
     padding: 50px 16px;
-    background: map-get($map: $colors, $key: blue);
-
+    background-image: url("../assets/imgs/bg-policy.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 295px;
     .question-name {
       font-family: 'Nunito', sans-serif;
       font-weight: 900;
       font-size: 2.2rem;
+      max-width: 500px;
       color: white;
     }
 
@@ -359,6 +372,16 @@ page-home {
   }
 
   @media (max-width: 575px) {
+    .condition-container{
+      padding: 16px 10px !important; 
+      .a3-container{
+        padding: 10px !important;
+      }
+      .content-container{
+        width: 100% !important;
+        padding: 10px !important;
+      }
+    }
     .p-reason-container {
       padding-top: 20px;
       padding-bottom: 20px;

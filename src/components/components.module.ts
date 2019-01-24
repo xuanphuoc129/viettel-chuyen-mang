@@ -8,14 +8,18 @@ import { CommonModule } from '@angular/common';
 import { PackageComponent } from './package/package';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { CoditionComponent } from './codition/codition';
+import { FakeCustomerComponent } from './fake-customer/fake-customer';
+import { QuestionAndAnswerComponent } from './question-and-answer/question-and-answer';
 
 @NgModule({
-	declarations: [HinhThucDauNoiComponent,
+    declarations: [HinhThucDauNoiComponent,
+    FakeCustomerComponent,
     ChonGoiCuocComponent,
     InfomationComponent,
     AcceptRequestComponent,
     PackageComponent,
-    CoditionComponent],
+    CoditionComponent,
+    QuestionAndAnswerComponent],
 	imports: [
         IonicModule,
         CommonModule,
@@ -26,7 +30,9 @@ import { CoditionComponent } from './codition/codition';
     ChonGoiCuocComponent,
     InfomationComponent,
     AcceptRequestComponent,
+    FakeCustomerComponent,
     PackageComponent,
-    CoditionComponent]
+    CoditionComponent,
+    QuestionAndAnswerComponent]
 })
 export class ComponentsModule {}

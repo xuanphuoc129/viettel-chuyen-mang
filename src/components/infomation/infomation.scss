@@ -6,6 +6,7 @@ infomation {
       border: 1px solid lightgray;
       border-radius: 5px;
       padding-left: 10px;
+      font-size: 1.4rem;
     }
     ion-input:focus{
       border-color: #32bfbd !important;
@@ -43,6 +44,32 @@ infomation {
       background: #FF7000;
       border-radius: 5px;
       min-height: 48px;
+  }
+
+  .f-district {
+    position: relative;
+    height: 44px;
+    background: white;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    width: calc(100% - 8px);
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+    border: 1px solid lightgray;
+
+    .icon-container {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6E6E6E;
+    }
+
+    color: #6E6E6E;
+
+    &.selected {
+      color: map-get($map: $colors, $key: blue);
+    }
   }
 
   @media (max-width: 575px) {
