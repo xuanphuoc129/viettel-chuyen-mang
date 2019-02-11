@@ -23,7 +23,7 @@
     </ion-col>
   </ion-row>
 
-  <ion-toolbar mode="md" class="sm-hidden">
+  <ion-toolbar mode="ios" class="sm-hidden">
     <ion-buttons left>
       <button ion-button icon-only menuToggle>
         <ion-icon name="menu"></ion-icon>
@@ -46,6 +46,8 @@
     </div>
 
   </div>
+
+  
   <div [hidden]="mId==2">
     <div class="p-reason-container background-image" [ngStyle]="{'background-image': 'url('+reason_bg+')'}">
       <div text-center>
@@ -196,9 +198,9 @@
     <question-and-answer></question-and-answer>
   </div>
 
-  <ion-fab top left>
+  <!-- <ion-fab top left>
     <fake-customer></fake-customer>
-  </ion-fab>
+  </ion-fab> -->
 
   <ion-fab bottom right>
     <button ion-fab (click)="onClickAddFab()">

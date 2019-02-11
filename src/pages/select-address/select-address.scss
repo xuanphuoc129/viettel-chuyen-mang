@@ -18,9 +18,10 @@ page-select-address {
     }
     
     .f-maxwidth-container{
-        // max-height: calc(100% - 50px);
+        max-height: calc(100% - 50px);
         height: 100%;
         overflow: hidden;
+        max-width: 560px;
         width: 100%;
         border-radius: 5px;
         position: relative;
@@ -69,6 +70,7 @@ page-select-address {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0 10px !important;
     }
     ion-content.content{
         background: rgba($color: #000000, $alpha: .4);

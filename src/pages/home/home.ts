@@ -140,6 +140,9 @@ export class HomePage {
 
   onClickStep(item) {
     let newId = item.id;
+    // console.log(newId);
+    // console.log(this.typeConnect.id);
+    
     if (newId > this.stepID && (!this.mStepDones[newId - 2] || !this.mStepDones[this.stepID - 1])) {
       this.mAppmodule.showToast("Bạn chưa hoàn thành bước hiện tại");
       return;
@@ -149,7 +152,7 @@ export class HomePage {
       return;
     }
 
-    if (this.typeConnect.id == 1) {
+    if (this.typeConnect.id == 1 && newId == 2) {
       return;
     }
 
