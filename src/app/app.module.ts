@@ -36,8 +36,7 @@ import { IonicStorageModule, Storage } from '@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AppModuleProvider,
-    Storage
+    AppModuleProvider
   ]
 })
 export class AppModule {}
