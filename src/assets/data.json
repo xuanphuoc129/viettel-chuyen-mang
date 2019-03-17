@@ -1,5 +1,5 @@
 {
-  "phone_number": "098.776.2233",
+  "phone_number": "096.2018.555",
   "sitekey": "6Lf87HsUAAAAAKIeDHzY17bd66hDqDbgn6tmhWv3",
   "phi_chuyen_mang": "60,000đ",
   "note": "Lưu ý: Các trường hợp không được hoàn cước chuyển mạng.\nNhà mạng chuyển đi từ chối yêu cầu chuyển mạng do khách hàng không đáp ứng điều kiện chuyển mạng.\nKhách hàng hủy yêu cầu chuyển mạng.\nYêu cầu chuyển mạng bị từ chối do khách hàng không gửi tin nhắn xác nhận đăng ký chuyển mạng.",
@@ -58,54 +58,78 @@
       }
     ],
     "ds_goicuoc_trasau": [
-      {
-        "id": "T150",
-        "name": "T150",
-        "description": "call-1000 phút nội mạng\ncall-100 phút ngoại mạng + quốc tế",
-        "price": "150"
-      },
-      {
-        "id": "B150",
-        "name": "B150",
-        "description": "call-1000 phút nội mạng\nwifi-5GB data",
-        "price": "150"
-      },
-      {
-        "id": "B250",
-        "name": "B250",
-        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\nwifi-10GB data\nsms-50 sms nội mạng",
-        "price": "250"
-      },
-      {
-        "id": "B250X",
-        "name": "B250X",
-        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-5GB data\nsms-50 sms nội mạng",
-        "price": "250"
-      },
-      {
-        "id": "B400",
-        "name": "B400",
-        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-15GB data\nsms-100 sms nội mạng",
-        "price": "400"
-      },
-      {
-        "id": "B500",
-        "name": "B500",
-        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-200 phút ngoại mạng + quốc tế\nwifi-30GB data\nsms-200 sms nội mạng",
-        "price": "500"
-      },
-      {
-        "id": "B700",
-        "name": "B700",
-        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-300 phút ngoại mạng + quốc tế\nwifi-15GB data\nsms-300 sms nội mạng",
-        "price": "700"
-      },
-      {
-        "id": "B1000",
-        "name": "B1000",
-        "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-500 phút ngoại mạng + quốc tế\nwifi-30GB data\nsms-500 sms trong nước",
-        "price": "1000"
-      }
+        {
+          "id": "T150",
+          "name": "T150",
+          "description": "call-1000 phút nội mạng\ncall-100 phút ngoại mạng + quốc tế",
+          "price": "150"
+        },
+        {
+          "id": "B150",
+          "name": "B150",
+          "description": "call-1000 phút nội mạng\nwifi-5GB data",
+          "price": "150"
+        },
+        {
+          "id": "T200",
+          "name": "T200",
+          "description": "call-2000 phút nội mạng\ncall-150 phút ngoại mạng + quốc tế",
+          "price": "200"
+        },
+        {
+          "id": "B200",
+          "name": "B200",
+          "description": "call-2000 phút nội mạng\nwifi-8GB data",
+          "price": "200"
+        },
+        {
+          "id": "B250",
+          "name": "B250",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\nwifi-10GB data\nsms-50 sms nội mạng",
+          "price": "250"
+        },
+        {
+          "id": "B250X",
+          "name": "B250X",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-5GB data\nsms-50 sms nội mạng",
+          "price": "250"
+        },
+        {
+          "id": "B300",
+          "name": "B300",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-8GB data\nsms-100 sms nội mạng",
+          "price": "300"
+        },
+        {
+          "id": "B350",
+          "name": "B350",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-10GB data\nsms-100 sms nội mạng",
+          "price": "350"
+        },
+        {
+          "id": "B400",
+          "name": "B400",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-100 phút ngoại mạng + quốc tế\nwifi-15GB data\nsms-100 sms nội mạng",
+          "price": "400"
+        },
+        {
+          "id": "B500",
+          "name": "B500",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-200 phút ngoại mạng + quốc tế\nwifi-30GB data\nsms-200 sms nội mạng",
+          "price": "500"
+        },
+        {
+          "id": "B700",
+          "name": "B700",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-300 phút ngoại mạng + quốc tế\nwifi-15GB data\nsms-300 sms nội mạng",
+          "price": "700"
+        },
+        {
+          "id": "B1000",
+          "name": "B1000",
+          "description": "call-Miễn phí 60 phút đầu tiên/cuộc\ncall-500 phút ngoại mạng + quốc tế\nwifi-30GB data\nsms-500 sms trong nước",
+          "price": "1000"
+        }
     ]
   },
   "conditions": [
