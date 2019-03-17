@@ -1,9 +1,10 @@
 {
   "phone_number": "098.776.2233",
-  "sitekey":"6Lf87HsUAAAAAKIeDHzY17bd66hDqDbgn6tmhWv3",
+  "sitekey": "6Lf87HsUAAAAAKIeDHzY17bd66hDqDbgn6tmhWv3",
   "phi_chuyen_mang": "60,000đ",
   "note": "Lưu ý: Các trường hợp không được hoàn cước chuyển mạng.\nNhà mạng chuyển đi từ chối yêu cầu chuyển mạng do khách hàng không đáp ứng điều kiện chuyển mạng.\nKhách hàng hủy yêu cầu chuyển mạng.\nYêu cầu chuyển mạng bị từ chối do khách hàng không gửi tin nhắn xác nhận đăng ký chuyển mạng.",
-  "accept_request": [{
+  "accept_request": [
+    {
       "icon": "./assets/imgs/support.svg",
       "name": "NHÂN VIÊN VIETTEL SẼ LIÊN HỆ KHÁCH HÀNG",
       "description": "Khách hàng chờ nhân viên Viettel liên hệ làm thủ tục chuyển mạng giữ số trên hệ thông Viettel.\nSau khi hoàn thành thủ tục đăng ký chuyển mạng tại Viettel, Khách hàng nộp cước phí <strong>60.000đ</strong> và làm tiếp các bước dưới đây."
@@ -21,7 +22,8 @@
     "username": "cuahangviettel.vn@gmail.com",
     "password": "eknpglqnwzyydbur"
   },
-  "reason": [{
+  "reason": [
+    {
       "name": "Phủ sóng rộng nhất",
       "icon": "./assets/imgs/vt-tower.png"
     },
@@ -43,7 +45,8 @@
     }
   ],
   "goicuoc": {
-    "ds_goicuoc_tratruoc": [{
+    "ds_goicuoc_tratruoc": [
+      {
         "id": "economy",
         "name": "Economy",
         "description": "Economy là gói cước trả trước đơn giản, thuận tiện và dễ sử dụng nhất của Viettel Telecom."
@@ -54,7 +57,8 @@
         "description": "TOMATO là gói cước đại chúng nhất của Viettel, đặc biệt dành cho nhóm khách hàng mong muốn sử dụng điện thoại di "
       }
     ],
-    "ds_goicuoc_trasau": [{
+    "ds_goicuoc_trasau": [
+      {
         "id": "T150",
         "name": "T150",
         "description": "call-1000 phút nội mạng\ncall-100 phút ngoại mạng + quốc tế",
@@ -103,5 +107,82 @@
         "price": "1000"
       }
     ]
+  },
+  "conditions": [
+    {
+      "id": "1",
+      "name": "Thuê bao đang hoạt động hai chiều tại nhà mạng chuyển đi.",
+      "icon": "list-box",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "2",
+      "name": "Thông tin thuê bao đăng ký chuyển mạng phải chính xác",
+      "icon": "contacts",
+      "description": "Thông tin thuê bao đăng ký chuyển mạng trùng khớp với thông tin thuê bao đăng ký tại nhà mạng chuyển đi. Bao gồm: Số giấy tờ, đối tượng khách hàng (cá nhân/doanh nghiệp), hình thức sử dụng (trả trước/trả sau). Để tra cứu thông tin, khách hàng nhắn tin TTTB gửi 1414.",
+      "vinaphone": "<strong>Cách 1:</strong>\nSoạn TTTB gửi 1414\n(áp dụng cho TB trả trước)\n<strong>Cách 2:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 3:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nSoạn TTTB gửi 1414\n(áp dụng cho TB trả trước và trả sau)\n<strong>Cách 2:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 3:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "3",
+      "name": "Thuê bao trả sau có dịch vụ chuyển vùng quốc tế và sử dụng sóng của mạng di động nước ngoài nhỏ hơn 60 ngày",
+      "icon": "contacts",
+      "description": "Thuê bao trả sau có dịch vụ chuyển vùng quốc tế và sử dụng sóng của mạng di động nước ngoài nhỏ hơn 60 ngày tính đến thời điểm đăng ký chuyển mạng.\n",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nSoạn KT gửi 994\n<strong>Cách 2:</strong>\nSoạn KT_CVQT gửi 999\n<strong>Cách 3:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 4:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "4",
+      "name": "Tổng nợ cước của thuê bao trả sau < 500.000 VNĐ (bao gồm nợ cước và cước nóng phát sinh trong tháng thực hiện chuyển mạng).",
+      "icon": "call",
+      "description": "Nếu trong một yêu cầu chuyển mạng có nhiều thuê bao thì tổng nợ cước <500.000 VNĐ nhân với số lượng thuê bao trong yêu cầu chuyển mạng đó.\n",
+      "vinaphone": "<strong>Cách 1:</strong>\nSoạn CUOC gửi 9889\n<strong>Cách 2:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 3:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nSoạn TC gửi 9233\n<strong>Cách 2:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 3:</strong>\nGọi tổng đài 18001090/9090\n<strong>Cách 4:</strong>\nBấm gọi *112#"
+  },
+  {
+      "id": "5",
+      "name": "Thuê bao trả trước không nợ các dịch vụ ứng tiền",
+      "icon": "cash",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "6",
+      "name": "Các thuê bao chung một hợp đồng phải thực hiện đồng thời trong một yêu cầu chuyển mạng",
+      "icon": "create",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "7",
+      "name": "Thuê bao không vi phạm hợp đồng, cam kết với nhà mạng chuyển đi và không trong quá trình tranh chấp, chuyển quyền sở hữu, không vướng các vấn đề pháp lý như: Số thuê bao đang bị truy tố, rao vặt trái phép, SMS spam.",
+      "icon": "alert",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "8",
+      "name": "Thuê bao hoạt động 180 ngày kể từ lần kích hoạt gần nhất",
+      "icon": "time",
+      "description": "Thuê bao hoạt động 180 ngày kể từ lần kích hoạt gần nhất, không tính việc thay đổi thông tin, đổi loại hình từ trả trước sang trả sau (hoặc ngược lại), hoặc chuyển quyền sử dụng.\n",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "9",
+      "name": "Số lượng thuê bao trong một yêu cầu chuyển mạng không vượt quá số lượng theo quy định",
+      "icon": "trending-up",
+      "description": "Số lượng thuê bao trong một yêu cầu chuyển mạng không vượt quá số lượng theo quy định (tối đa 3 thuê bao đối với cá nhân và 100 thuê bao đối với tổ chức/doanh nghiệp).\n",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
+  },
+  {
+      "id": "10",
+      "name": "Thuê bao có thời gian chuyển mạng gần nhất tối thiểu 90 ngày và không trong quá trình xử lý chuyển mạng của một yêu cầu khác.",
+      "icon": "time",
+      "vinaphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0912.481.111\nĐà Nẵng: 0914.181.111\nTP.HCM: 0918.681.111\n<strong>Cách 2:</strong>\nGọi tổng đài 18001091/9191",
+      "mobiphone": "<strong>Cách 1:</strong>\nGọi hotline\nHà Nội: 0904.144.144\nĐà Nẵng: 0905.144.144\nTP.HCM: 0908.144.144\nCần Thơ: 0939.144.144\n<strong>Cách 2:</strong>\nGọi tổng đài 18001090/9090"
   }
+  ]
 }

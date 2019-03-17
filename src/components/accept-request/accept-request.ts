@@ -19,8 +19,8 @@ export class AcceptRequestComponent {
   constructor(public mAppModule: AppModuleProvider) {
       this.mAppModule.onLoadConfig().then(()=>{
         this.items = this.mAppModule.getAppConfig().get("accept_request");
-        this.items[2].description.replace("#1","'checkmark'");
-        this.items[2].description.replace("#2","'close'");
+        this.items[0].description.replace("#1","'checkmark'");
+        this.items[1].description.replace("#2","'close'");
 
         let notedata = this.mAppModule.getAppConfig().get("note");
         this.notes = notedata.split("\n");

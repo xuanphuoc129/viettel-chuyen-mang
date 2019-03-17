@@ -1,0 +1,38 @@
+<!-- Generated template for the QuestionAndAnswerComponent component -->
+<div>
+  <div class="f-question">
+    <div class="semi-title">
+      Câu hỏi thường gặp
+    </div>
+
+    <div class="list-container " *ngIf="mMode == 1">
+      <div class="question-container a1-relative" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions2; let i = index"
+        (click)="onClickQuestion(i)">
+        <div class="question" [innerHtml]="item.question"></div>
+        <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
+        <div class="icon-container a1-absolute">
+          <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
+          <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-container " *ngIf="mMode == 2">
+      <div class="question-container" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions; let i = index"
+        (click)="onClickQuestion(i)">
+        <div class="question" [innerHtml]="item.question"></div>
+        <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
+        <div class="icon-container a1-absolute">
+          <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
+          <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-more-container" text-center>
+      <button ion-button *ngIf="mMode == 1" (click)="onChangeMode(2)">Xem thêm</button>
+      <button ion-button *ngIf="mMode == 2" (click)="onChangeMode(1)">Thu gọn</button>
+    </div>
+  </div>
+
+</div>

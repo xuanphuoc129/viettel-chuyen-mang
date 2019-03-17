@@ -11,7 +11,7 @@ import { HttpModule } from '@angular/http';
 import { ComponentsModule } from '../components/components.module';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { HttpClientModule } from '@angular/common/http'
-import { IonicStorageModule, Storage } from '@ionic/storage';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [

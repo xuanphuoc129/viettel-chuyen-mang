@@ -15,8 +15,10 @@ export class HomePage {
 
   name: string = "Chuyển mạng giữ số";
   logo_vt: string = "./assets/imgs/logo-vt.png";
-  btn_blue: string = "Đăng ký chuyển mạng";
-  btn_gray: string = "Tra cứu điều kiện chuyển mạng";
+  logo_vt_m: string = "./assets/imgs/logo_viettel2.png";
+  btn_blue: string = "Đăng ký";
+  btn_gray: string = "Tra cứu điều kiện";
+  btn_gray_2: string = "Câu hỏi thường gặp";
   url_home: string = "";
 
   reason_bg: string = "./assets/imgs/bg-reason-w.png";
@@ -58,12 +60,15 @@ export class HomePage {
   phi_chuyen_mang: string = "";
   notes: Array<string> = [];
 
+
+  mId: number = 2;
   constructor(
     public mAlertController: AlertController,
     public mModalControl: ModalController,
     public mEvents: Events,
     public mAppmodule: AppModuleProvider,
     public navCtrl: NavController) {
+    this.mAppmodule.onLoadDistrict();
     this.mAppmodule.onLoadConfig().then(() => {
       this.onLoadConfigDone();
     })
@@ -71,6 +76,7 @@ export class HomePage {
       this.reason_bg = "./assets/imgs/bg-reason-m.png";
     }
     this.dots = [1, 2, 3];
+    this.mId = 1;
   }
 
   onLoadConfigDone() {
@@ -105,16 +111,38 @@ export class HomePage {
         l5 += this.mPackagePayAfter.name;
       }
       let l6 = "Hình thức đấu nối : " + this.typeConnect.name;
-      this.mAppmodule.sendEmail(data + l6 + ":" + l5);
+
+      if (this.typeConnect.id == 1) {
+        this.mAppmodule.sendEmail(l6 + ";" + data);
+      } else {
+        this.mAppmodule.sendEmail(l6 + ";" + data + l5);
+      }
+
       this.mAppmodule.showToast("Bạn đã đăng ký thành công");
       this.mEvents.publish("sendmail-success");
       this.mStepDones[2] = true;
       this.onClickNext();
+    });
+
+    this.mEvents.subscribe("clickSearch", () => {
+        this.onClickCondition();
+    })
+    this.mEvents.subscribe("clickSignup", () => {
+      this.onClickSign();
+    })
+    this.mEvents.subscribe("clickQuestion", () => {
+      this.mId = 1;
+      setTimeout(() => {
+        this.onClickQuestion();
+      }, 200);
     })
   }
 
   onClickStep(item) {
     let newId = item.id;
+    // console.log(newId);
+    // console.log(this.typeConnect.id);
+    
     if (newId > this.stepID && (!this.mStepDones[newId - 2] || !this.mStepDones[this.stepID - 1])) {
       this.mAppmodule.showToast("Bạn chưa hoàn thành bước hiện tại");
       return;
@@ -124,12 +152,11 @@ export class HomePage {
       return;
     }
 
-    if (this.typeID == 1 && this.stepID == 1) {
-      this.onShowNotiModal();
+    if (this.typeConnect.id == 1 && newId == 2) {
       return;
     }
 
-    this.stepID = item.id;
+    this.stepID = newId;
     this.doTransformLine();
   }
 
@@ -141,6 +168,20 @@ export class HomePage {
       this.mLineElement.style.transform = "scaleX(" + (0.3333 * (this.stepID - 1)) + ") translateY(-50%)";
     }
     this.doScrollToRegis();
+  }
+
+  onClickCondition() {
+    this.mId = 2;
+    setTimeout(() => {
+      this.myContent.scrollToTop(300);
+    }, 200);
+  }
+
+  onClickSign() {
+    this.mId = 1;
+    setTimeout(() => {
+      this.doScrollSign();
+    }, 200);
   }
 
   doScrollSign() {
@@ -203,7 +244,7 @@ export class HomePage {
     if (screen.width > 575) {
       let modal = this.mModalControl.create("NotiModalPage");
       modal.present();
-    }else{
+    } else {
       let alert = this.mAlertController.create({
         title: "Thông báo",
         message: "Hiện tại hình thức chuyển mạng sang gói trả trước chưa được áp dụng"
@@ -226,8 +267,9 @@ export class HomePage {
     }
 
     if (this.stepID == 1 && this.typeConnect.id == 1) {
-      this.onShowNotiModal();
-      return;
+      // this.onShowNotiModal();
+      // return;
+      this.stepID = 2;
     }
 
     if (this.stepID == 3) {
@@ -240,6 +282,9 @@ export class HomePage {
   }
 
   onClickBack() {
+    if (this.stepID == 3 && this.typeConnect.id == 1) {
+      this.stepID = 2;
+    }
     this.stepID--;
     this.doTransformLine();
     this.doScrollToRegis();
@@ -273,4 +318,16 @@ export class HomePage {
     this.myContent.scrollToBottom(200);
   }
 
+  onClickAddFab() {
+    this.mAppmodule.showModal("MenuShowModalPage", null);
+  }
+
+
+  onClickQuestion() {
+    let divID = "questionanswer";
+    let ele = document.getElementById(divID);
+    if (ele) {
+      this.myContent.scrollTo(0, ele.offsetTop, 600);
+    }
+  }
 }

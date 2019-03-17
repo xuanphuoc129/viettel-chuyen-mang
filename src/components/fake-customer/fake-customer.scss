@@ -1,0 +1,29 @@
+fake-customer {
+    .text-show{
+        padding: 10px 10px 10px 10px;
+        line-height: 1.6em;
+    }
+    .icon-image{
+        padding: 16px;
+    }
+    #fakeId{
+        border: .55px solid lightgray;
+        max-width: 320px;
+        border-radius: 40px;
+        box-shadow: 0 3px  6px rgba($color: #000000, $alpha: .16);
+        display: none;
+        background: white;
+    }
+    .success-text{
+        color: map-get($map: $colors, $key: orange);
+    }
+    @media (max-width: 575px) {
+        #fakeId{
+            max-width: 220px !important;
+        }
+        .text-show{
+            font-size: 1.1rem;
+            line-height: 1.4em !important;
+        }
+    }
+}   

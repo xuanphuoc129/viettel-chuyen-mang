@@ -31,6 +31,15 @@ export class InfomationComponent {
   phoneReceiveBool: boolean = true;
   sitekey: string = "";
 
+
+
+  mCity: string = "Tỉnh/thành phố";
+  mDistrict: string = "Quận/huyện";
+  mLocal: string = "Xã/phường";
+  mCityCode: string = "-1";
+  mDistrictCode: string = "-1";
+  mCommuneCode: string = "-1";
+
   constructor(
     public mAppModuel: AppModuleProvider,
     public mEvents: Events, private zone: NgZone) {
@@ -68,6 +77,11 @@ export class InfomationComponent {
   }
 
   checkForm() {
+    if(this.mCityCode == "-1" || this.mDistrictCode == "-1" || this.mCommuneCode == "-1"){
+      alert("Bạn chưa chọn địa chỉ");
+      return;
+    }
+
     if (Utils.kiemTraToanDauCach(this.name) || this.name.trim() == '') {
       this.nameBool = false;
       return false;
@@ -75,12 +89,6 @@ export class InfomationComponent {
       this.nameBool = true;
     }
 
-    if (!Utils.isValidPhone(this.phoneConvert) || this.phoneConvert.length < 9 || this.phoneConvert.length > 11 || parseInt(this.phoneConvert) < 299999999) {
-      this.phoneConvertBool = false;
-      return false;
-    } else {
-      this.phoneConvertBool = true;
-    }
 
     if (!Utils.isValidPhone(this.phoneReceive) || this.phoneReceive.length < 9 || this.phoneReceive.length > 11 || parseInt(this.phoneReceive) < 299999999) {
       this.phoneReceiveBool = false;
@@ -109,11 +117,95 @@ export class InfomationComponent {
 
   createBodyEmail() {
     let l1 = "Họ tên: " + this.name + ";";
-    let l2 = "Điện thoại chuyển đổi: " + this.phoneConvert + "\r \n" + ";";
     let l3 = "Điện thoại liên hệ: " + this.phoneReceive + "\r \n" + ";";
-    let l4 = "Địa chỉ: " + this.address + "\r \n" + ";";
+    let l2 = "Địa chỉ: " + this.address + ", "+ this.mLocal + ", " + this.mDistrict + ", " + this.mCity + "; ";
+    return l1 + l3 + l2;
+  }
 
-    return l1 + l2 + l3 + l4;
+  onClickCity() {
+    let array = [];
+    let citys = this.mAppModuel.getDistrictManager().getCitys();
+    citys.forEach(element => {
+      array.push({
+        id: element.code,
+        name: element.name
+      });
+    });
+
+    this.mAppModuel.showModal("SelectAddressPage", { params: { title: "Chọn tỉnh/thành phố", items: array, selected: this.mCityCode } }, (id) => {
+      if (id) {
+        if (id != this.mCityCode) {
+          this.mCityCode = id;
+          let index = citys.findIndex(ele => {
+            return ele.code == this.mCityCode;
+          })
+          if (index > -1) {
+            this.mCity = citys[index].name;
+          }
+        }
+      }
+    });
+
+  }
+
+  onClickDistrict() {
+    if (this.mCityCode == "-1") {
+      alert("Bạn chưa chọn tỉnh/thành phố");
+      return;
+    } else {
+      let array = [];
+      let districts = this.mAppModuel.getDistrictManager().getDistrictWithCityCode(this.mCityCode);
+      districts.forEach(element => {
+        array.push({
+          id: element.code,
+          name: element.cap + " " + element.name
+        });
+      });
+
+      this.mAppModuel.showModal("SelectAddressPage", { params: { title: "Chọn quận/huyện", items: array, selected: this.mDistrictCode } }, (id) => {
+        if (id) {
+          if (id != this.mDistrictCode) {
+            this.mDistrictCode = id;
+            let index = districts.findIndex(ele => {
+              return ele.code == this.mDistrictCode;
+            })
+            if (index > -1) {
+              this.mDistrict = districts[index].cap + " " + districts[index].name;
+            }
+          }
+        }
+      });
+    }
+  }
+
+  onClickCommune() {
+    if (this.mDistrictCode == "-1") {
+      alert("Bạn chưa chọn quận/huyện");
+      return;
+    } else {
+      let array = [];
+      let communes = this.mAppModuel.getDistrictManager().getDistrictWithDistrictCode(this.mDistrictCode);
+      communes.forEach(element => {
+        array.push({
+          id: element.code,
+          name: element.cap + " " + element.name
+        });
+      });
+
+      this.mAppModuel.showModal("SelectAddressPage", { params: { title: "Chọn xã/phường", items: array, selected: this.mCommuneCode } }, (id) => {
+        if (id) {
+          if (id != this.mCommuneCode) {
+            this.mCommuneCode = id;
+            let index = communes.findIndex(ele => {
+              return ele.code == this.mCommuneCode;
+            })
+            if (index > -1) {
+              this.mLocal = communes[index].cap + " " + communes[index].name;
+            }
+          }
+        }
+      });
+    }
   }
 
 
