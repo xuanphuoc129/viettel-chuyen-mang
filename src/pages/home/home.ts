@@ -104,6 +104,8 @@ export class HomePage {
     }, 300);
 
     this.mEvents.subscribe("sendmail", (data) => {
+      let title = "Khách hàng CMGS";
+
       let l5 = "Gói cước: ";
       if (this.typeID == 1) {
         l5 += this.mPackagesPayForward.name;
@@ -113,9 +115,9 @@ export class HomePage {
       let l6 = "Hình thức đấu nối : " + this.typeConnect.name;
 
       if (this.typeConnect.id == 1) {
-        this.mAppmodule.sendEmail(l6 + ";" + data);
+        this.mAppmodule.sendEmail(title + ". " + l6 + ". " + data);
       } else {
-        this.mAppmodule.sendEmail(l6 + ";" + data + l5);
+        this.mAppmodule.sendEmail(title + ". " + l6 + ". " + l5 + data);
       }
 
       this.mAppmodule.showToast("Bạn đã đăng ký thành công");
@@ -199,6 +201,7 @@ export class HomePage {
     }
   }
 
+  /**Thay đổi gói cước id = 1 trả trước, id = 2 trả sau */
   onChangeTypeConnect($event) {
     this.typeConnect = $event;
     this.typeID = this.typeConnect.id;
@@ -208,6 +211,13 @@ export class HomePage {
     this.mPackagePayAfter = new Packages();
     this.mPackagesPayForward = new PackagesPayForward();
     this.mStepDones[1] = false;
+
+    // Thay đổi giá gói cước
+    if(this.typeID == 1){ 
+      this.phi_chuyen_mang = "50.000đ"; // Trả trước
+    }else{
+      this.phi_chuyen_mang = "60.000đ"; // Trả sau
+    }
   }
 
   doShowAnimation(id: string) {
